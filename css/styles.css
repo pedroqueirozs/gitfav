@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  color: var(--colorBody);
+}
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  /*cores*/
+  --colorText: #7c7c8a;
+  --backGroundInput: #06181c;
+  --backgroundButton: #065e7c;
+  --headerColorTable: #092d38;
+  --colorButonRemove: #f75a68;
+  --backGroundBody: #06181c;
+  --colorBody: #bcbcdf;
+  --colorTR: #5a5a64;
+}
+body {
+  background-color: var(--backGroundBody);
+}
+.app {
+  max-width: 900px;
+  margin: 50px auto;
+}
+.app header {
+  display: flex;
+  justify-content: space-between;
+}
+.app header input,
+button {
+  height: 3rem;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0);
+  border-width: 0;
+  white-space: nowrap;
+}
+.app header input {
+  background-color: var(--backGroundInput);
+  color: var(--colorText);
+  width: 42rem;
+  padding: 1rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+  border: none;
+}
+.app header button {
+  border-radius: 0 0.4rem 0.4rem 0;
+  background-color: var(--backgroundButton);
+  border: none;
+  width: 12rem;
+  color: var(--colorBody);
+}
+table {
+  margin-top: 8%;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--backgroundButton);
+}
+table * {
+  font-size: 1.6rem;
+}
+table tr:nth-child(even) {
+  background-color: var(--colorTR);
+}
+
+table th {
+  background-color: var(--headerColorTable);
+  height: 5rem;
+  text-align: left;
+  padding: 1.5rem;
+}
+table th:first-child {
+  width: 450px;
+  border-top-left-radius: 0.8rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.8rem;
+}
+table td {
+  padding: 1.5rem;
+}
+table td.user {
+  display: flex;
+  gap: 1rem;
+}
+table td.user a {
+  text-decoration: none;
+}
+table td.user a p {
+  font-weight: bold;
+}
+
+table td.remove {
+  color: red;
+  cursor: pointer;
+}
+
+table img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}

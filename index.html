@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/main.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>GIT-FAV</title>
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header>
+        <div class="headerLogo">
+          <div class="img">
+            <img src="./assets/Gitfav.svg" alt="Imagem do Git Fav" />
+          </div>
+        </div>
+        <div class="inputs">
+          <label for="input-search" class="sr-only">Usuario do Git Hub</label>
+          <input
+            id="input-search"
+            type="text"
+            placeholder="Digite o Github user name que que favoritar"
+          />
+          <button><i class="ph ph-star"></i>Favoritar</button>
+        </div>
+      </header>
+      <table>
+        <thead>
+          <tr>
+            <th>Usuarios</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+
+        <tbody class="hide"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
