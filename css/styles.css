@@ -46,8 +46,7 @@ button {
 .app header input {
   background-color: var(--backGroundInput);
   color: var(--colorText);
-  max-width: 42rem;
-  min-width: 15rem;
+  width: 42rem;
   padding: 1rem;
   border-radius: 0.4rem 0 0 0.4rem;
   border: 1px solid var(--backgroundButton) ;
