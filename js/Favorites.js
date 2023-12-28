@@ -1,4 +1,4 @@
-import { GitHubUser } from "./GitHubUser.js";
+import { GitHubUser } from "/GitHubUser.js";
 //Classe que ira conter a logica dos dados//
 export class Favorites {
   //esse root é o app do meu HTML//
