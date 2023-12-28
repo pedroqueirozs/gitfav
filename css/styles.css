@@ -12,8 +12,8 @@
   --backGroundInput: #06181c;
   --backgroundButton: #065e7c;
   --headerColorTable: #092d38;
-  --colorButonRemove: #f75a68;
-  --backGroundBody: #06181c;
+  --colorButonRemove: hsl(226, 91%, 66%);
+  --backGroundBody: #0d061c;
   --colorBody: #bcbcdf;
   --colorTR: #5a5a64;
 }
@@ -49,7 +49,7 @@ button {
   width: 42rem;
   padding: 1rem;
   border-radius: 0.4rem 0 0 0.4rem;
-  border: none;
+  border: 1px solid var(--backgroundButton) ;
 }
 .app header button {
   border-radius: 0 0.4rem 0.4rem 0;
@@ -108,4 +108,14 @@ table img {
   width: 60px;
   height: 60px;
   border-radius: 100%;
+}
+.backgroundTable {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.invisible {
+  display: none;
 }
